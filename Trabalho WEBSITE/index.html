@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDITE: título e descrição (aparecem no Google e ao compartilhar o link) -->
+  <title>Gabriel Ribeiro | Desenvolvedor em formação</title>
+  <meta name="description" content="Portfólio de Gabriel Ribeiro: educador físico e estudante de Ciência da Computação.">
+  <link rel="icon" href="imagens/logo.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <img src="imagens/logo.png" alt="Logo" class="logo" width="36px" height="36px">
+        <span>Gabriel Ribeiro</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-md-center gap-md-2">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trajetoria">Trajetória</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item">
+            <button id="tema" class="btn btn-sm btn-outline-secondary" type="button" aria-label="Alternar tema claro/escuro">Tema</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- INÍCIO -->
+    <header id="inicio" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <h1>Programo com a mesma disciplina com que treino pessoas.</h1>
+            <p class="lead">
+              Sou educador físico e estudante de Ciência da Computação. Aprendi a
+              entender objetivos, planejar etapas e acompanhar resultados. Agora uso
+              isso para construir software.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#projetos" class="btn btn-pulse btn-lg">Ver projetos</a>
+              <a href="#contato" class="btn btn-outline-secondary btn-lg">Falar comigo</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <img src="imagens/gabriel.jpg" alt="Foto de Gabriel" class="foto">
+          </div>
+        </div>
+
+        <!-- Linha de batimento que vira código (animada em script.js/CSS) -->
+        <svg class="pulso" viewBox="0 0 1000 80" preserveAspectRatio="none" aria-hidden="true">
+          <path pathLength="1" d="M0 40 H300 L330 40 L350 10 L375 70 L395 40 H470 L490 40 L500 25 L510 55 L520 40 H1000" />
+        </svg>
+      </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="secao">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4"><h2>Sobre mim</h2></div>
+          <div class="col-lg-8 texto">
+            <!-- minha história -->
+            <p>
+              Sou formado em Educação Física e trabalho como personal trainer. No dia a dia,
+              preciso ouvir o aluno, entender o problema real e montar um plano que funcione
+              para aquela pessoa.
+            </p>
+            <p>
+              Cursando Ciência da Computação, descobri que o raciocínio é o mesmo: dividir um
+              objetivo grande em passos pequenos, medir o progresso e ajustar quando algo não
+              dá certo. Hoje estudo desenvolvimento web e busco minha primeira oportunidade
+              na área de TI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="secao alt">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="row g-4 mt-1">
+          <!-- tecnologias que eu uso -->
+          <div class="col-md-4">
+            <h3>Tecnologias</h3>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>Git e GitHub</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Em estudo</h3>
+            <ul class="tags">
+              <li>Python</li><li>Banco de dados</li><li>Algoritmos</li><li>Estruturas de dados</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Vindas da minha experiência</h3>
+            <ul class="tags">
+              <li>Comunicação</li><li>Planejamento</li><li>Disciplina</li><li>Atendimento ao cliente</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="secao">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="row g-4 mt-1">
+          <!-- EDITE: copie e cole um bloco "col-md-6 col-lg-4" para cada projeto novo -->
+          <div class="col-md-6 col-lg-4">
+            <article class="projeto">
+              <img src="imagens/projeto1.png" alt="Captura do projeto 1">
+              <div class="p-3">
+                <h3>Landing Page Personal Trainer</h3>
+                <p>Landing Page real para os clientes terem de maneira imediata a como me procurar.</p>
+                <p class="stack">HTML · CSS · JavaScript</p>
+                <a href="https://gbriel3.figma.site/" target="_blank" rel="noopener" class="ms-3">Ver online</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="projeto">
+              <img src="imagens/projeto2.jpg" alt="Captura do projeto 2">
+              <div class="p-3">
+                <h3>Nome do projeto 2</h3>
+                <p>Descreva em uma ou duas frases o que ele faz e qual problema resolve.</p>
+                <p class="stack">HTML · CSS · Bootstrap</p>
+                <a href="https://github.com/seu-usuario/projeto2" target="_blank" rel="noopener">Código</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="projeto">
+              <img src="imagens/projeto3.jpg" alt="Captura do projeto 3">
+              <div class="p-3">
+                <h3>Nome do projeto 3</h3>
+                <p>Descreva em uma ou duas frases o que ele faz e qual problema resolve.</p>
+                <p class="stack">Python</p>
+                <a href="https://github.com/seu-usuario/projeto3" target="_blank" rel="noopener">Código</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section id="trajetoria" class="secao alt">
+      <div class="container">
+        <h2>Trajetória</h2>
+        <ol class="linha mt-4">
+          <!-- EDITE: anos, instituições e descrições -->
+          <li>
+            <span class="ano">2021</span>
+            <h3>Graduação em Educação Física</h3>
+            <p>Instituição. Base em anatomia, fisiologia e prescrição de treinos.</p>
+          </li>
+          <li>
+            <span class="ano">2022 até hoje</span>
+            <h3>Personal trainer</h3>
+            <p>Atendimento individual, planejamento de treinos e acompanhamento de resultados.</p>
+          </li>
+          <li>
+            <span class="ano">2026 até hoje</span>
+            <h3>Ciência da Computação</h3>
+            <p>UDF, 2° semestre. Foco em desenvolvimento web.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao">
+      <div class="container texto">
+        <h2>Contato</h2>
+        <p>Quer conversar sobre uma vaga, estágio ou projeto? Me escreva.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <!-- EDITE: seus links -->
+          <a class="btn btn-pulse" href="mailto:gbriel3@gmail.com">gbriel3@gmail.com</a>
+          <a class="btn btn-outline-secondary" href="https://github.com/gbriel3ti" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/gabriel-ribeiro-da-silva-602a09159/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">© <span id="ano"></span> Gabriel Ribeiro. Feito à mão com HTML, CSS e JavaScript.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
